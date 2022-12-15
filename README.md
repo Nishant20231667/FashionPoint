@@ -3,6 +3,7 @@ Django app for fashion delivery
 
 Step 1:
   Clone the repository
+  
 Step 2:
   Perform following commands:
   
