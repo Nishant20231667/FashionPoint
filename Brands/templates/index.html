@@ -1,0 +1,347 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Fashion Point</title>
+
+  <!-- META -->
+  <!-- <img src="{% static 'images/makeup.png' %}"> -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="Fashion Point"
+    content="Author: Nishant Garg, Illustrator: Font Awesome and Flat Icon, Category: Food Application, Open Source: Yes" />
+  <meta name="description" content="Food Ordering Website. The 'Fashion Point' has
+    been practiced to override the prevalent problems in manual systems. This
+    website is compatible to finalize and, in some cases, reduces the
+    difficulties faced by this existing system." />
+  <meta name="robots" content="all" />
+  <meta name="googlebot" content="all" />
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- CDN FONTS  -->
+  <link href="https://fonts.cdnfonts.com/css/elinga" rel="stylesheet" />
+
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+  <!-- CSS -->
+  <link href="https://copyfonts.com/fonts/attari-salees.html" />
+  <link rel="stylesheet" href="{% static 'styles.css' %}" />
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <img class="navbar-brand" src="{% static './images/logo.png' %}" alt="logo" />
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link px-3" href="">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4" href="#brandsection">BRANDS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4" href="#categorysection">Category</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4" href="#reviewsection">Review</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link px-4" href="contactus">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <input type="text" placeholder="Search.." />
+          </li>
+        </ul>
+      </div>
+      <span class="shoppingCart" data-toggle="modal" data-target="#exampleModal">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="shoppingCartAfter">0</span>
+      </span>
+    </div>
+  </nav>
+
+  <a id="scrollToTop" class="btn"><i class="fas fa-caret-up"></i></a>
+
+  <div class="container home-container">
+    <section id="homeSection" class="d-flex justify-content-center">
+      <div class="row homeRow">
+        <div class="col-lg-6 homeTxtCol">
+          <h1 class="homeHeading">
+            Where the Glow <br />
+            <span data-text="Rejuvenate">Rejuvenate</span>
+            <br />
+            you
+          </h1>
+          <br />
+          <div class="homeBtnDiv">
+            <a href="#brandsection" class="btn homeBtn">Order Now</a>
+          </div>
+        </div>
+        <div class="col-lg-6 homeImgCol">
+          <img class="homeImg" src="{% static './images/makeup.png' %}" alt="makeup" width="0" height="50" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <br />
+
+  <section id="brandsection">
+    <div class="container">
+      <h1>
+        <span><b>BRANDS</b></span>
+      </h1>
+      <!-- Brand 1 -->
+      <div class="row gutters-40">
+        <div class="col-lg-4 col-sm-4 col-4">
+          <div class="product-box-layout4 Lakme">
+            <div class="item-figure">
+              <img src="{% static './images/Lakme.png' %}" alt="Category" width="100%" height="100%" />
+            </div>
+            <div class="item-content">
+              <h2 class="card-title">Lakme</h2>
+            </div>
+          </div>
+        </div>
+        <!-- Brand 2 -->
+        <div class="col-lg-4 col-sm-4 col-4">
+          <div class="product-box-layout4 AVON">
+            <div class="item-figure">
+              <img src="{% static './images/AVON.png' %}" alt="Category" width="100%" height="100%" />
+            </div>
+            <div class="item-content">
+              <h2 class="card-title">AVON</h2>
+            </div>
+          </div>
+        </div>
+        <!-- Brand 3 -->
+        <div class="col-lg-4 col-sm-4 col-4">
+          <div class="product-box-layout4 L'OREAL">
+            <div class="item-figure">
+              <img src="{% static './images/LOREAL.png' %}" alt="Category" width="100%" height="100%" />
+            </div>
+            <div class="item-content">
+              <h2 class="card-title">L'OREAL</h2>
+            </div>
+          </div>
+        </div>
+        <!-- Brand 4 -->
+        <div class="col-lg-4 col-sm-4 col-4">
+          <div class="product-box-layout4 Beauty Bar">
+            <div class="item-figure">
+              <img src="{% static './images/Beauty Bar.png' %}" alt="Category" width="100%" height="100%" />
+            </div>
+            <div class="item-content">
+              <h2 class="card-title">Beauty Bar</h2>
+            </div>
+          </div>
+        </div>
+        <!-- Brand 5 -->
+        <div class="col-lg-4 col-sm-4 col-4">
+          <div class="product-box-layout4 Maybelline">
+            <div class="item-figure">
+              <img src="{% static './images/Maybelline.png' %}" alt="Category" width="100%" height="100%" />
+            </div>
+            <div class="item-content">
+              <h2 class="card-title">Maybelline</h2>
+            </div>
+          </div>
+        </div>
+        <!-- Brand 6 -->
+        <div class="col-lg-4 col-sm-4 col-4">
+          <div class="product-box-layout4 blueheaven">
+            <div class="item-figure">
+              <img src="{% static './images/blueheaven.png' %}" alt="Category" width="100%" height="100%" />
+            </div>
+            <div class="item-content">
+              <h2 class="card-title">Blueheaven</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- REVIEW SECTION -->
+  <section id="reviewsection" class="testimonials">
+    <h1 class="review-title">
+      <span><b>Reviewers</b></span>
+    </h1>
+    <p style="color: black; text-align: center;">Fashion Point Reviewers</p></br>
+
+    <div class="row text-center">
+      <div class="col-md-4 mb-5 mb-md-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="{% static './images/Nishant.jpg' %}" class="rounded-circle shadow-1-strong" width="150" height="150"
+            alt="person" />
+        </div>
+        <h5 class="mb-3">Nishant Garg</h5>
+        <p style="color: black;">
+          <i class="fas fa-quote-left pe-2"></i>
+          Good Service, fast Delivery and amazing taste.
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-5 mb-md-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" class="rounded-circle shadow-1-strong"
+            width="150" height="150" alt="person" />
+        </div>
+        <h5 class="mb-3">Lisa Cudrow</h5>
+        <p style="color: black;">
+          <i class="fas fa-quote-left pe-2"></i>Faster Delivery & Fresh food.
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" class="rounded-circle shadow-1-strong"
+            width="150" height="150" alt="person" />
+        </div>
+        <h5 class="mb-3">John Smith</h5>
+        <p style="color: black;">
+          <i class="fas fa-quote-left pe-2"></i>Awesome Taste
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="far fa-star fa-sm text-warning"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER STARTS HERE -->
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-9 footerHeadingCol">
+          <h2>Fashion Point</h2>
+        </div>
+
+        <div class="col-3 socialMedia">
+          <a href="https://www.facebook.com/" class="socialMediaIcon" target="_blank">
+            <span><i class="fab fa-facebook-f"></i></span></a>
+          <a href="https://www.twitter.com/" class="socialMediaIcon" target="_blank">
+            <span><i class="fab fa-twitter"></i></span></a>
+          <a href="https://www.instagram.com/nishant_.garg_/?next=%2Fnishant_.garg_%2F&hl=en" target="_blank"
+            class="socialMediaIcon">
+            <span><i class="fab fa-instagram"></i></span></a>
+          <a href="https://www.linkedin.com/in/nishant-garg-201549179/" target="_blank" class="socialMediaIcon">
+            <span><i class="fab fa-linkedin"></i></span></a>
+        </div>
+      </div>
+
+      <div class="row contactRow">
+        <p>
+          <a class="footer_clickable" href="./policy.html">Policies</a>
+          <a class="footer_clickable" href="./terms_of_service.html">Terms of Service</a>
+          <a class="footer_clickable" href="./contactus">Contact Us</a>
+        </p>
+      </div>
+
+      <div class="row copyrightRow">
+        <p class="copyright">
+          &copy; Copyright Fashion Point All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- FONT AWESOME JS -->
+  <script src="https://kit.fontawesome.com/9f6e489cf7.js" crossorigin="anonymous"></script>
+  <!-- JQUERY CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- CUSTOM JS -->
+  <script src="./index.js"></script>
+</body>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- JQUERY CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- CUSTOM JS -->
+<script src="./index.js"></script>
+<script>
+  $(window).on("load", function () {
+    $("#loading").hide();
+  });
+</script>
+
+</html>
